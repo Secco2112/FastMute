@@ -1,0 +1,18 @@
+{
+	"name" : "Fast Mute",
+	"description" : "Mute the guy that just say 'Drop ammo, please'"
+	"author" : "Secco2112",
+        "version" : "1.0",
+	"contact" : "gustavomarini9@gmail.com",
+	"keybinds" : [
+		{
+			"keybind_id" : "Fast_Mute",
+			"name" : "FastMute",
+			"description" : "Map a key to open the Fast Mute"
+			"script_path" : "menu.lua",
+			"run_in_menu" : true,
+			"run_in_game" : true,
+			"localized" : false
+		}
+	]
+}
