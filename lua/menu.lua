@@ -1,8 +1,6 @@
-FastMute = FastMute or {}
-
 local Net = _G.LuaNetworking
 
-function FastMute:mute(id)
+function mute(id)
 	if peer:is_muted() then
 		peer:set_muted(false)
 		managers.chat:_receive_message(1, "Fast Mute", Net:GetNameFromPeerID(id) .. " was unmuted.", Color.red)
