@@ -6,7 +6,7 @@ function mute(id)
 		managers.chat:_receive_message(1, "Fast Mute", Net:GetNameFromPeerID(id) .. " was unmuted.", Color.red)
 	else --nao esta mutado
 		peer:set_muted(true) --muta
-		managers.chat:_receive_message(1, "Fast Mute", Net:GetNameFromPeerID(id) .. " is mutated.", Color.green)
+		managers.chat:_receive_message(1, "Fast Mute", Net:GetNameFromPeerID(id) .. " is muted.", Color.green)
 	end
 end
 
