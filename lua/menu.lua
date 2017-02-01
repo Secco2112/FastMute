@@ -1,6 +1,7 @@
 local Net = _G.LuaNetworking
 
 function mute(id)
+	local peer = managers.network._session:peer(id)
 	if peer:is_muted() then --esta mutado
 		peer:set_muted(false) --desmuta
 		managers.chat:_receive_message(1, "Fast Mute", Net:GetNameFromPeerID(id) .. " was unmuted.", Color.red)
@@ -10,7 +11,7 @@ function mute(id)
 	end
 end
 
-if Net:IsMultiplayer() and Net:IsInHeist() then
+if Net:IsMultiplayer() and Utils:IsInHeist() then
 	if Net:GetNumberOfPeers() > 0 then
 		local peer = managers.network._session:peer(id)
 		local menu_options = {}
