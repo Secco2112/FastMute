@@ -9,7 +9,7 @@
 			"keybind_id" : "Fast_Mute",
 			"name" : "FastMute",
 			"description" : "Map a key to open the Fast Mute"
-			"script_path" : "menu.lua",
+			"script_path" : "lua/menu.lua",
 			"run_in_menu" : true,
 			"run_in_game" : true,
 			"localized" : false
