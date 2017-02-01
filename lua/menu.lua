@@ -15,7 +15,7 @@ if Net:IsMultiplayer() and Net:IsInHeist() then
 		local peer = managers.network._session:peer(id)
 		local menu_options = {}
 		for _, peer in pairs(managers.network:session():peers()) do
-			menu_options[#menu_options+1] ={text = peer:name(), data = peer:id(), callback = mute}
+			menu_options[#menu_options+1] = { text = peer:name(), data = peer:id(), callback = mute }
 		end
 		menu_options[#menu_options+1] = {text = "", is_cancel_button = true}
 		menu_options[#menu_options+1] = {text = "Close", is_cancel_button = true}
