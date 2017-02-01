@@ -1,11 +1,11 @@
 local Net = _G.LuaNetworking
 
 function mute(id)
-	if peer:is_muted() then //esta mutado
-		peer:set_muted(false) //desmuta
+	if peer:is_muted() then --esta mutado
+		peer:set_muted(false) --desmuta
 		managers.chat:_receive_message(1, "Fast Mute", Net:GetNameFromPeerID(id) .. " was unmuted.", Color.red)
-	else //nao esta mutado
-		peer:set_muted(true) //muta
+	else --nao esta mutado
+		peer:set_muted(true) --muta
 		managers.chat:_receive_message(1, "Fast Mute", Net:GetNameFromPeerID(id) .. " is mutated.", Color.green)
 	end
 end
